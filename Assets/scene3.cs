@@ -22,7 +22,7 @@ public class scene3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemydir = (enemy.transform.position.normalized - transform.position);
+        enemydir = (enemy.transform.position - transform.position).normalized;
 
         if (Input.GetKeyDown(KeyCode.W))
         {
